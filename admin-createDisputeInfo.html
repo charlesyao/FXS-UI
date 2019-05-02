@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+  
+
+  <script src="bootstrap/js/jquery3.2.1.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="skin-blu skin-admin">
+    <header class="admin-header fixed-top d-flex align-items-center">
+        <!-- Logo -->
+        <a href="admin.html" class="logo mr-auto">
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>管理后台</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <ul class="nav justify-content-end admin-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="mr-1">欢迎</span><span class="userRole">Admin</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user/dashboard">个人中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_self">关于我们</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signOut">登出</a>
+          </li>
+        </ul>
+      </header>
+    <aside class="main-sidebar" style="">
+      <section class="sidebar" style="height: auto;">
+        <ul class="sidebar-menu tree" data-widget="tree">
+          <li class="treeview active">
+            <a href="admin-caseInfo.html">
+             <span>纷争信息</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-getLevelOneData.html">
+              <span>一级类型</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-createCaseParent.html">
+              <span>创建一级类型</span>
+            </a>
+          </li>
+          <li>
+            <a href="admin-createCaseSub.html">
+              <span>创建二级类型</span>
+            </a>
+          </li>
+         
+       </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper" style="padding-top: 5%">
+      <div class="menu-content" style="overflow-y: auto;max-width: 860px;margin: 0 auto;">
+        <div class="box box-primary p-3" style="min-height: 300px;">
+          <div class="all-case-info-detail">
+            <div class="small-wrap">
+              <h5 class="text-center">创建基本纷争信息</h5>
+              <form>
+                <div class="form-group row">
+                  <label for="" class="col-sm-4 col-form-label">问题 #1 :</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" id="question" value="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-4 col-form-label">是否是基本问题？</label>
+                  <div class="col-sm-8 pt-1">
+                    <label class="radio-inline">
+                      <input type="radio" checked="checked" type="radio" name="isBasicQuestion" value="Y">是
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="isBasicQuestion" value="N">否
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-4 col-form-label">是否选为根问题？</label>
+                  <div class="col-sm-8 pt-1">
+                    <label class="radio-inline">
+                      <input type="radio" checked="checked" type="radio" name="isRootQuestionRadios" id="isRootQuestion1" value="Y">是
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="isRootQuestionRadios" id="isRootQuestion2" value="N">否
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-4 col-form-label">问题类型？</label>
+                  <div class="col-sm-8 pt-1">
+                    <label class="radio-inline">
+                      <input type="radio" checked="checked" type="radio" name="questionType" id="questionType1" value="0">单选
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="questionType" id="questionType2" value="1">多选
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="questionType" id="questionType3" value="2">文本输入 
+                    </label>
+                  </div>
+                </div>
+                <div class="answer-wrap">
+                  <div class="form-group row">
+                     <label for="" class="col-sm-4 col-form-label">答案 #1 :</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="answer1" name="answer">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="" class="col-sm-4 col-form-label">答案 #2 :</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="answer2" name="answer">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="" class="col-sm-4 col-form-label">答案 #3 :</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="answer3" name="answer">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                     <label for="" class="col-sm-4 col-form-label">答案 #4 :</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="answer4" name="answer">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-12">
+                    <button class="btn btn-law btn-sm" type="button" id="addAnswer">添加答案</button>
+                  </div>
+                </div>
+                
+                
+                <div class="form-group row">
+                  <div class="col-sm-12 text-center">
+                    <button class="btn btn-law btn-sm" type="submit" id="">保存</button>
+                    <button class="btn btn-law btn-sm" type="reset" id="">重置</button>
+                    <a role="button" class="btn btn-outline-dark btn-sm" href="admin-caseInfo.html" id="">返回</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <ul class="list-group">
+      <li>
+        © 2013-2017, shuai.com, Inc. All Rights Reserved. 上海小帅信息科技有限公司 沪ICP备14006851号-2
+      </li>
+      <li>地址：上海市静安区XXXXXXXXX</li>
+      <li></li>
+      <li>沪公网安备 31011002000396号</li>
+    </ul>
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#addAnswer").click(function(){
+            var lastAnswer = $(".answer-wrap .form-group.row:last");
+            var number = parseInt(lastAnswer.find('input').attr("id").split('answer')[1]);
+            if (number >= 10) {
+              return
+            }
+            var addedNode = lastAnswer.clone();
+            addedNode.find("label").html("答案 #" + (number+1) + " :");
+            addedNode.find("input").attr("id","answer"+(number+1));
+            $(".answer-wrap").append(addedNode)
+        });
+    });
+  </script>
+
+</body>
+</html>

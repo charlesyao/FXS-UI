@@ -1,0 +1,1 @@
+browser-sync start --server --port 3100 --ui-port 3101 --files "**"

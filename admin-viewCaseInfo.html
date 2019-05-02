@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+  
+
+  <script src="bootstrap/js/jquery3.2.1.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="skin-blu skin-admin">
+    <header class="admin-header fixed-top d-flex align-items-center">
+        <!-- Logo -->
+        <a href="admin.html" class="logo mr-auto">
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>管理后台</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <ul class="nav justify-content-end admin-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="mr-1">欢迎</span><span class="userRole">Admin</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user/dashboard">个人中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_self">关于我们</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signOut">登出</a>
+          </li>
+        </ul>
+      </header>
+    <aside class="main-sidebar" style="">
+      <section class="sidebar" style="height: auto;">
+        <ul class="sidebar-menu tree" data-widget="tree">
+          <li class="treeview active">
+            <a href="admin-caseInfo.html">
+             <span>纷争信息</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-getLevelOneData.html">
+              <span>一级类型</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-createCaseParent.html">
+              <span>创建一级类型</span>
+            </a>
+          </li>
+          <li>
+            <a href="admin-createCaseSub.html">
+              <span>创建二级类型</span>
+            </a>
+          </li>
+         
+       </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper" style="padding-top: 5%">
+      <div class="menu-content" style="overflow-y: auto;max-width: 860px;margin: 0 auto;">
+        <div class="box box-primary p-3" style="min-height: 300px;">
+          <div class="all-case-info-detail">
+            <div class="small-wrap">
+              <h5 class="text-center">详细信息</h5>
+              <form>
+                <div class="form-group row">
+                  <label for="" class="col-sm-3 col-form-label">问题编号</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" readonly id="currentQuestion" value="17329492">
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-3 col-form-label">问题描述</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="currentQuestionDesc" value="请输入其他纠纷的事情经过">
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-3 col-form-label">是否是根问题</label>
+                  <div class="col-sm-9 pt-1">
+                    <label class="radio-inline">
+                      <input type="radio" checked="checked" type="radio" name="isRootQuestionRadios" value="Y" disabled>是
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="isRootQuestionRadios" value="N" disabled>否
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-3 col-form-label">问题类型</label>
+                  <div class="col-sm-9 pt-1">
+                    <label class="radio-inline">
+                      <input type="radio" checked="checked" type="radio" name="questionTypeRadios" value="0" disabled>单选
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="questionTypeRadios" value="1" disabled>多选
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="questionTypeRadios" value="2" disabled>文本输入
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-3 col-form-label">所属案件类型</label>
+                  <div class="col-sm-9">
+                    <select class="form-control" disabled="disabled" id="selectFalltypus">
+                      <option value="-1">选择从属案件类型</option>
+                      <option id="1000002" value="1000002">借贷纠纷、投资理财</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                   <label for="" class="col-sm-3 col-form-label">操作</label>
+                  <div class="col-sm-9">
+                    <button class="btn btn-law btn-sm" type="button" id="unbindQFMapping">解绑</button>
+                    <button class="btn btn-law btn-sm" type="button" id="editQuestionInfo">编辑</button>
+                    <button class="btn btn-law btn-sm" type="button" style="display: none" id="saveEditQuestionInfo">保存</button>
+                    <button class="btn btn-sm btn-outline-dark" type="button" style="display: none" id="cancelEditQuestionInfo">取消</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="mt-5 table-wrap w-100 scroll-y scroll-y-400">
+              <table class="table table-sm table-bordered">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">问题编号</th>
+                    <th scope="col">问题描述</th>
+                    <th scope="col">匹配下级问题</th>
+                    <th scope="col" style="min-width: 200px">操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswer" value="18277866">
+                    </td>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswerDesc" value="否">
+                    </td>
+                    <td>
+                      <select class="form-control" disabled="disabled" id="18277866_selectParent">
+                        <option value="-1">选择下级问题</option>
+                        <option id="13438844" value="13438844">犯罪嫌疑人涉嫌罪名是什么？（填写）</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-law btn-sm btn-sm unbindQAMapping" id="18277866_currentUnbind">解绑</button>
+                      <button type="button" class="btn btn-law btn-sm editAnswerInfo" id="18277866_editAnswerInfoBtn">编辑</button>
+                      <button type="button" class="btn btn btn-outline-dark btn-sm deleteAnswerInfo" id="18277866_deleteAnswerInfoBtn">删除</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm saveEditAnswerInfoBtn" id="18277866_saveEditAnswerInfoBtn">保存</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm cancelEditAnswerInfo" id="18277866_cancelEditAnswerInfoBtn">取消</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswer" value="18277866">
+                    </td>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswerDesc" value="否">
+                    </td>
+                    <td>
+                      <select class="form-control" disabled="disabled" id="18277866_selectParent">
+                        <option value="-1">选择下级问题</option>
+                        <option id="13438844" value="13438844">犯罪嫌疑人涉嫌罪名是什么？（填写）</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-law btn-sm btn-sm unbindQAMapping" id="18277866_currentUnbind">解绑</button>
+                      <button type="button" class="btn btn-law btn-sm editAnswerInfo" id="18277866_editAnswerInfoBtn">编辑</button>
+                      <button type="button" class="btn btn btn-outline-dark btn-sm deleteAnswerInfo" id="18277866_deleteAnswerInfoBtn">删除</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm saveEditAnswerInfoBtn" id="18277866_saveEditAnswerInfoBtn">保存</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm cancelEditAnswerInfo" id="18277866_cancelEditAnswerInfoBtn">取消</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswer" value="18277866">
+                    </td>
+                    <td>
+                      <input class="form-control" disabled="disabled" type="text" id="18277866_currentAnswerDesc" value="否">
+                    </td>
+                    <td>
+                      <select class="form-control" disabled="disabled" id="18277866_selectParent">
+                        <option value="-1">选择下级问题</option>
+                        <option id="13438844" value="13438844">犯罪嫌疑人涉嫌罪名是什么？（填写）</option>
+                      </select>
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-law btn-sm btn-sm unbindQAMapping" id="18277866_currentUnbind">解绑</button>
+                      <button type="button" class="btn btn-law btn-sm editAnswerInfo" id="18277866_editAnswerInfoBtn">编辑</button>
+                      <button type="button" class="btn btn btn-outline-dark btn-sm deleteAnswerInfo" id="18277866_deleteAnswerInfoBtn">删除</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm saveEditAnswerInfoBtn" id="18277866_saveEditAnswerInfoBtn">保存</button>
+                      <button type="button" style="display: none" class="btn btn-law btn-sm cancelEditAnswerInfo" id="18277866_cancelEditAnswerInfoBtn">取消</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-center mb-0">
+                <button type="button" class="btn btn-law" onclick="history.go(-1)">返回</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <ul class="list-group">
+      <li>
+        © 2013-2017, shuai.com, Inc. All Rights Reserved. 上海小帅信息科技有限公司 沪ICP备14006851号-2
+      </li>
+      <li>地址：上海市静安区XXXXXXXXX</li>
+      <li></li>
+      <li>沪公网安备 31011002000396号</li>
+    </ul>
+  </footer>
+
+</body>
+</html>

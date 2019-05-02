@@ -1,0 +1,360 @@
+<html>
+<head>
+  <title>上海小帅信息科技有限公司</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- 引入 Bootstrap -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <script src="bootstrap/js/jquery3.2.1.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(".step-content-wrap .step .btn.next").on("click",function(){
+        $(".step-content-wrap .step").hide()
+        $(this).closest(".step").next(".step").show();
+
+
+debugger;
+        var currentIndex = $(this).closest(".step").attr("data-content");
+        var currentLi = $(".cm-step-list li[data-content='" + currentIndex + "']");
+        currentLi.removeClass("current").addClass("complete");
+        if (currentLi.next("li").length == 1) {
+          currentLi.next("li").addClass("current");
+        }else{
+          $(".cm-step-list").hide();
+        }
+        
+      });
+      $(".step-content-wrap .step .btn.prev").on("click",function(){
+        $(".step-content-wrap .step").hide()
+        $(this).closest(".step").prev(".step").show();
+
+        var currentIndex = $(this).closest(".step").attr("data-content");
+        var currentLi = $(".cm-step-list li[data-content='" + currentIndex + "']");
+        currentLi.removeClass("current");
+        currentLi.prev("li").removeClass("complete").addClass("current");
+        
+
+      })
+    })
+  </script>
+
+</head>
+<body>
+  <div class="topBar col-md-12">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="img/logo.png"></div>
+        <nav class="col-md-9 navbar-default" role="navigation">
+          <ul class="nav justify-content-end mainNav">
+            <li class="nav-item">
+              <a class="nav-link" href="laywer_center.html">诉讼业务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="laywer_center_mycase.html">咨询池</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+  <div class="mainPart mycasePart">
+    <div class="container">
+      <div class="containerWapper">
+        <h1 class="blue my-0">完善资料</h1>
+
+        <div class="complete-info-wrap">
+          <div class="steps laywer-info">
+            <div class="row multistep mx-0">
+              <div class="cm-perfect-step cm-step cm-step-list-4">
+                  <ul class="cm-step-list clearfix">
+                      <li class="first-list current" data-content="one">
+                          <span class="tit"> 1、执业信息 </span>
+                      </li>
+                      <li class="" data-content="two">
+                          <span class="tit"> 2、专长介绍 </span>
+                      </li>
+                      <li class="" data-content="three">
+                          <span class="tit"> 3、执业资质 </span>
+                      </li>
+                      <li class="last-list" data-content="four">
+                          <span class="tit"> 4、个人信息 </span>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-warning info mb-4">
+              <i class="fa fa-volume-up icon-msg" aria-hidden="true"></i>
+              <p>温馨提示：</p>
+              <p>您填写的资料将直接展示给客户。个人资料填写的质量越高，获得案件委托的成功率越高，请认真填写！</p>
+              <p>如有问题请联系客服电话400-850-8650（09:00-22:00）</p>
+          </div>
+          <div class="step-content-wrap">
+            <div class="step-one step" data-content="one">
+              <div class="step-title">
+                职业信息
+              </div>
+              <form>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    执业年限
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="" placeholder=""></div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    执业机构
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="" placeholder=""></div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    现任职位
+                  </label>
+                  <div class="col-sm-4">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="text-center mt-5">
+                <button type="button" class="btn btn-law btn-lg next">下一步</button>
+              </div>
+            </div>
+            <div class="step-two step" data-content="two" style="display: none">
+              <div class="step-title">
+                专长介绍
+              </div>
+              <form>
+                <div class="form-group row mx-0">
+                  <label for="" class="col-form-label col-sm-12">
+                    <div class="row">
+                      <div class="col-sm-6">
+                         <span class="text-danger">*</span>
+                          您个人在房产土地领域的专长介绍
+                      </div>
+                      <div class="col-sm-6">
+                        <span>不知道怎么写？ <a data-toggle="modal" href="#goodSample">查看优秀样例</a></span>
+                      </div>
+                    </div>
+                   
+                  </label>
+                  <div class="col-sm-12">
+                    <textarea class="form-control" rows="5" id=""></textarea>
+                   </div>
+                </div>
+                
+              </form>
+              <div class="text-center mt-5">
+                <button type="button" class="btn btn-outline-dark btn-lg prev">上一步</button>
+                <button type="button" class="btn btn-law btn-lg next">下一步</button>
+              </div>
+            </div>
+            <div class="step-three step" data-content="three" style="display: none">
+              <div class="step-title">
+                执业资质
+              </div>
+              <form>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    最高学历
+                  </label>
+                  <div class="col-sm-4">
+                    <select class="form-control" id="">
+                      <option>--请选择--</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    执业证号
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="" placeholder=""></div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    执业证照片
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="file" class="form-control-file" id="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                  </label>
+                  <div class="col-sm-9">
+                    <p>请上传律师执业证书照片，要能准确看清证件号码及个人照片。 示例如下：</p>
+                    <div class="person-pic" style="width: 150;height: 200px">
+                      <img src="img/zhizhao-pic.png">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="text-center mt-5">
+                <button type="button" class="btn btn-outline-dark btn-lg prev">上一步</button>
+                <button type="button" class="btn btn-law btn-lg next">下一步</button>
+              </div>
+            </div>
+            <div class="step-four step" data-content="four" style="display: none">
+              <div class="step-title">
+                个人信息
+              </div>
+              <form>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    最高学历
+                  </label>
+                  <div class="col-sm-4">
+                    <select class="form-control" id="">
+                      <option>--请选择--</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    毕业院校
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="" placeholder=""></div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                    <span class="text-danger">*</span>
+                    个人头像
+                  </label>
+                  <div class="col-sm-4">
+                    <input type="file" class="form-control-file" id="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="" class="col-sm-2 offset-sm-1 col-form-label pr-0">
+                  </label>
+                  <div class="col-sm-9">
+                    <p>头像是展示您个人风采的重要部分，请上传清晰、形象良好的图片。</p>
+                    <div class="person-pic" style="width: 150;height: 200px">
+                      <img src="img/photo-demo.jpg">
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="text-center mt-5">
+                <button type="button" class="btn btn-outline-dark btn-lg prev">上一步</button>
+                <button type="button" class="btn btn-law btn-lg next">完成</button>
+              </div>
+            </div>
+            <div class="step-finish step text-center" style="display: none">
+              <div class="p-2 mb-3 mx-3 bg-warning">
+                <span class="text-danger">
+                  <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                  完善资料提交成功！
+                </span>
+              </div>
+              <div>
+                <p class="text-secondary">我们将尽快审核您的信息，请注意查收邮箱，如需加急请您与客服人员联系。</p>
+                <p class="text-secondary">客服热线: 000-000-0000</p>
+                <p class="text-secondary">客服服务时间: 周一至周日09：00-22：00</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="goodSample">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h5>
+            优秀样例1
+          </h5>
+          <p>
+            特别擅长处理合同纠纷，成功案例已达十几起，如王某等13 人诉杭州天玄网络科技有限公司网络服务合同纠纷，当事人的全部诉讼请求均获法院支持；刘某等数人诉杭州聚杭网络科技有限公司网络服务合同纠纷，成功拿回钱款。
+          </p>
+          <h5>
+            优秀样例2
+          </h5>
+          <p>
+            代理过多起房屋产权纠纷、房屋买卖纠纷、房屋确权纠纷、房屋继承纠纷等，在法律操作层面，有着丰富的实践经验，为客户争取到了最佳利益，得到了当事人的信赖与信任。
+          </p>
+          <h5>
+            优秀样例3
+          </h5>
+          <p>
+            代理张小泉注册商标人告上海张小泉刀剪店侵权案；中信银行票据诈骗案；证券咨询师代客买股亏损赔偿案；国泰君安证券公司账户管理失误赔偿案等有较大社会影响力的案件。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <ul class="list-group">
+      <li>
+        © 2013-2017, shuai.com, Inc. All Rights Reserved. 上海小帅信息科技有限公司 沪ICP备14006851号-2
+      </li>
+      <li>地址：上海市静安区XXXXXXXXX</li>
+      <li></li>
+      <li>沪公网安备 31011002000396号</li>
+    </ul>
+  </footer>
+
+  <script type="text/javascript">
+$(".lineOne a").click(function() {
+  $(".OneBox").show();
+  $(".TwoBox").hide();
+});
+$(".lineTwo a").click(function() {
+  $(".OneBox").hide();
+  $(".TwoBox").show();
+});
+
+// $(".lineOne a").click(function() {
+//   $(".OneBox").addClass("active").removeClass("centerBox");
+//   $(".TwoBox").addClass("centerBox").removeClass("active");
+// });
+// $(".lineTwo a").click(function() {
+//   $(".TwoBox").addClass("active").removeClass("centerBox");
+//   $(".OneBox").addClass("centerBox").removeClass("active");
+// });
+</script>
+
+</body>
+
+</html>

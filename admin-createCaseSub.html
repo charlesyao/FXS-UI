@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+
+  <script src="bootstrap/js/jquery3.2.1.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="skin-blu skin-admin">
+    <header class="admin-header fixed-top d-flex align-items-center">
+        <!-- Logo -->
+        <a href="admin.html" class="logo mr-auto">
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>管理后台</b></span>
+        </a>
+
+        <!-- Header Navbar: style can be found in header.less -->
+        <ul class="nav justify-content-end admin-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="mr-1">欢迎</span><span class="userRole">Admin</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user/dashboard">个人中心</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_self">关于我们</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/signOut">登出</a>
+          </li>
+        </ul>
+      </header>
+    <aside class="main-sidebar" style="">
+      <section class="sidebar" style="height: auto;">
+        <ul class="sidebar-menu tree" data-widget="tree">
+          <li class="treeview">
+            <a href="admin-viewCaseInfo.html">
+             <span>纷争信息</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-getLevelOneData.html">
+              <span>一级类型</span>
+            </a>
+          </li>
+          <li class="treeview">
+            <a href="admin-createCaseParent.html">
+              <span>创建一级类型</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="admin-createCaseSub.html">
+              <span>创建二级类型</span>
+            </a>
+          </li>
+         
+       </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <div class="content-wrapper" style="padding-top: 5%">
+      <div class="menu-content" style="overflow-y: auto;max-width: 860px;margin: 0 auto;">
+        <div class="box box-primary p-3" style="min-height: 300px;">
+          <div class="create-case-sub">
+            <h5 class="text-center">添加子案件类型</h5>
+            <form>
+              <div class="form-group">
+                <label for="parentType">选择父类型</label>
+                <select class="form-control" id="selectParent">
+                  <option id="1000002" value="借贷纠纷、投资理财">借贷纠纷、投资理财</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="parentType">输入子案件类型</label>
+                <input type="text" class="form-control" id="parentType" placeholder="输入案件类型">
+              </div>
+              <div class="form-group">
+                <a role="button" class="btn btn-law" href="admin-createCaseParent.html">创建父案件类型</a>
+                <button role="button" id="addSubLevel" class="btn btn-law">保存子案件类型</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="fixed-bottom">
+    <ul class="list-group">
+      <li>
+        © 2013-2017, shuai.com, Inc. All Rights Reserved. 上海小帅信息科技有限公司 沪ICP备14006851号-2
+      </li>
+      <li>地址：上海市静安区XXXXXXXXX</li>
+      <li></li>
+      <li>沪公网安备 31011002000396号</li>
+    </ul>
+  </footer>
+
+</body>
+</html>

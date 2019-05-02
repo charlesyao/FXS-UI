@@ -1,0 +1,1017 @@
+body{
+    background-color: #eee;
+    font-family: 'Helvetica Neue','Helvetica','Arial','Hiragino Sans GB','WenQuanYi Micro Hei','Microsoft Yahei',sans-serif;
+}
+h1 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+a{
+    color: #721c24;
+}
+.orange{
+    color: #ab1422
+}
+.scroll-y{
+  overflow-y: auto
+}
+.scroll-y-80{
+  max-height: 80px;
+}
+.marginTop30{
+    margin-top: 50px;
+}
+.space20{ 
+    margin: 3em 0
+}
+label {
+    font-weight: 100;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearboth{
+    clear: both;
+}
+ul li{
+    list-style:none;
+}
+.ft12{
+    font-size:12px
+}
+
+/*header section*/
+.topBar{ position: fixed; z-index: 10;
+    background-image: -moz-linear-gradient(left, #333F5F , #9D7961); 
+    background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #333F5F ), color-stop(1,#9D7961)); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333F5F ', endColorstr='#9D7961', GradientType='0');  
+    
+}
+
+.img-responsive{
+    background: url(../img/mainBg.png) no-repeat fixed center center;
+    background-size: cover;
+    height: 100%;
+}
+.loginBox a.nav-link{
+    color:white;
+    font-size: 12px;
+    border-right: 1px solid #ac8873;
+    margin: 10px 0 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.loginBox .nav-item:last-child a{
+    border-right: none
+}
+.mainNav a{
+    color:white;
+    font-size: 14px;
+    padding: .5rem .5rem;
+}
+.loginBox a:hover,
+.mainNav a:hover{
+    text-decoration:none;
+    color: #CFB87E;
+}
+
+.mainNav li{
+    margin: 10px 5px 0;
+}
+.headerRight .mainNav li{
+    margin: 5px 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #856404;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #fff;
+}
+.topBar .dropdown-menu{box-shadow: 1px 3px 6px 0 #8E97AC;}
+
+.mapId{background: url(../img/map.png) no-repeat; color: #fff; font-size: 12px; padding-left: 18px;margin-top: 20px;}
+/*header section end*/
+
+.containerWapper{
+    float: left;
+    width: 100%;
+    z-index: 1;
+    padding: 0 5% 84px;
+}
+
+.mainPart .container .containerWapper h1{
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*---counseling_free step2,step3----*/
+.introcouPhone .btnSquare a{
+    font-size: 16px;
+    font-weight: 100;
+}
+.counseling_free{
+    margin-top: 40px;
+}
+.cat-big a{
+    padding: 15px 0;
+}
+
+.select-city-section{
+    margin-bottom: 20px;
+}
+.select-city-section .title{
+    color: #856404;
+    padding-left: 5px;
+}
+.step2Step{
+    margin: 20px 150px 90px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+h4.gray {
+    font-weight: 100;
+    font-size: 12px;
+    color: #9B9B9B;
+}
+.writeInfoRightTitle li{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+.writeInfoRightItem{padding: 2em 1em;}
+.writeInfoRightItem li{
+    background: url(../img/icon_ok.png) no-repeat center left; 
+    padding-left:30px;
+    color:#58627C;
+    margin:0.5em 0;
+    font-size: 14px;
+}
+.btnNext a.seeMore{
+    margin: 0 auto 10px;
+}
+/*---counseling_free step2,step3 end----*/
+
+.lawsuit-content{
+    margin-top: 30px;
+}
+
+
+/*---login----*/
+.signupBox{
+    /*width: 70%;*/
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.signupBox.signup-laywer,
+.signupBox.login-sign{
+    width: 70%;
+}
+
+.signupBox .form-group{
+    margin-bottom: .3rem;
+}
+.signup-laywer .form-check-label{
+    padding-left: 0;
+}
+iframe .impowerBox .qrcode {
+    width: 120px!important;
+}
+iframe .impowerBox .title {
+    font-size: 16px;
+}
+#wx_login_container iframe{
+    height: 200px;
+    width: 180px;
+}
+.complete-info-wrap{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.step-content-wrap{
+    border: 1px solid #8a8484;
+    border-radius: 5px;
+    position: relative;
+}
+.complete-info-wrap .step{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.step-title{
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background-color: #eee;
+    padding: 5px 15px;
+}
+.login-header{
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: #CFB87E;
+}
+.loginInput .checkbox label{
+    margin-left: 15px;
+}
+.login-loginBTN:hover{
+    color: #fff;
+}
+.mapId{
+    margin-left: 20px;
+}
+.logoLine{
+    margin: 10px 0;
+}
+.homeInner{
+    margin-top: 17%;
+}
+.homeInner .mainBannerTitle{
+    margin: 10px 0 40px 0;
+}
+.searchNow{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.searchBox div{
+    margin: 0 auto;
+}
+.searchBox div input,
+.searchBox div button{
+    height: 50px;
+    padding: 0 20px;
+}
+.searchBox div button{
+    font-size: 14px;
+    padding: 0 30px;
+}
+.searchBox .homepage-search{
+    border-radius: 50px;
+}
+
+/*---lawsuit----*/
+.lawsuit-content h3.heading{
+    margin-top: 5%;
+}
+.lawsuit-content p,
+.lawsuit-content p{
+    margin-bottom: 40px;
+}
+.lawsuit-content h3.heading{
+    margin-top: 3%;
+}
+.solutionTwoBtn{
+    margin: 30px 0 10px;
+}
+.login-box-wechat-note {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.login-box-wechat-img {
+    text-align: center;
+}
+
+/*----mycase-----*/
+.mycasePart{
+    padding-top: 55px;
+}
+.mycaseLabel{
+    text-align: right; 
+}
+.mycaseCheckBox{
+    margin-left: -5px;
+}
+.mycasebtnSearch button{
+    margin: 20px 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+/*----center---*/
+.sLabelOne{
+    padding-left: 0;
+}
+.sLabelOneUl li label{
+    margin-right: 20px;
+}
+.laybtnSearch button{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.writeInfoText .listTitle{
+    border-top: none;
+    background:transparent;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.centerLi li{
+    margin-bottom: 10px;
+}
+.caseTwoBtn button{
+    margin: 0 15px;
+}
+.active{
+    display: block;
+}
+.nav-tabs li{
+    display: block;
+    float: left;
+    width: 100%;
+    text-align: center
+}
+.nav-tabs li.active a{
+    color: #CFB87E;
+}
+/*.buttonPop{
+    background-color: #000;
+    z-index: 999;
+    opacity: 0.8;
+}*/
+.wapperPopup{
+    margin-top: 25%;
+}
+.anwerGroup{
+    margin: 30px 0 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.answerBTN .btnNext{
+    float: right;
+    text-align: right;
+}
+.answerBTN .btnNext button{
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+.answerBTN{
+    margin-bottom: 30px;
+}
+.feed .box1 .dateAnswer .fabu_ls{
+    text-align: left;
+}
+
+
+.feed .box1 {
+    width: 700px;
+    float: left;
+    background: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom:10px;
+}
+
+
+/* ------------------------------------------------------------------------------------
+SEARCH       */
+
+.mainBannerTitle{text-align: center;}
+.mainBannerTitle .cur{color: #CFB87E}
+.mainBannerTitle a,.mainBannerTitle span{ color:#fff; margin: 0 25px;font-weight:200  }
+.mainBannerTitle a:hover{text-decoration:none;color: #CFB87E}
+.container-fluid{ margin: 6rem 0;}
+.form-inline .form-group{width:500px}
+.form-inline .form-control input.searchBox{width:300px；padding: .5rem 1rem;border:2px solid #CFB87E;}
+/*.tab-content{max-width: 700px;}*/
+.bid-header{
+    background-color: #fff;
+}
+.container-fluid .row{margin: 3em 0;}
+
+.searchBox .btn-default{
+    color: #fff;
+    background-color: #CFB87E;
+    border-color: #CFB87E; cursor: pointer;border-radius: 5rem;
+}
+.answer-quiz{
+    min-width: 650px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-top: 50px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card{
+    margin-bottom: 10px;
+}
+.quiz-wrap .quiz ul{
+    height: 245px;
+    overflow-y: auto;
+}
+.answer-quiz .fa{
+    position: absolute;
+    font-size: 80px;
+    cursor: pointer;
+    color: #806961;
+    top: 60;
+}
+.answer-quiz .fa.disabled{
+    color: #bfaca6;
+}
+.answer-quiz .fa.to-left{
+    left: 15px;
+}
+.answer-quiz .fa.to-right{
+    right: 15px;
+}
+/* ------------------------------------------------------------------------------------
+neiyene */   
+.mainPart{padding-top: 79px;}
+
+/* -----.mainPart .container{ padding:3em 0;}--*/
+.mainPart .container h1{
+    color:#856404;
+    margin-top: 30px;
+}
+
+.introcouPhone .introcoupCell,
+.writeInfo .row .ulCell{ 
+    background-color: #fff;
+    padding:20px;
+    margin:2em 0.2em;  
+    box-shadow: 0px 1px 3px rgba(191,188,188,0.50);
+    min-height: 220px;
+}
+.writeInfoRight.ulCell{
+    border-radius: 15px;
+}
+.introcoupCell{ text-align:center; color:#58627C}   
+.introcoupCell span{margin:0.3em 0;display:block;}
+.topBar ul li span{color: #ac8873;}
+.btnSquare{}
+.introcouPhone .btnSquare{
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid #856404;
+    box-shadow: 0 1px 3px 0 rgba(191,188,188,0.50);
+    margin:0.5em 0;
+    padding:0px;
+    min-height:auto;
+    float: none;
+}
+.introcouPhone .btnSquare a{
+    display: block;
+    font-size: 20px;
+    color: #856404; 
+}
+.answer-quiz .introcouPhone .btnSquare a{
+    font-size: 16px;
+    padding: 0 10px;
+}
+.login-sign-jump{
+    /*padding-top: 15px;
+    margin-top: 20px;
+    float: right;*/
+}
+
+.introcouPhone .btnSquare:hover{ 
+    background: rgba(207,184,126,0.80); 
+    color: #fff;
+}
+.introcouPhone .btnSquare:hover a{ 
+    text-decoration: none;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/*breadcrumb*/
+.breadcrumb{background: none;}
+.breadcrumb li{
+    font-size: 12px; 
+    color: #898f95;
+}
+.breadcrumb li a{color:#856404;background: url(../img/icon_next.png) no-repeat 94% 50%; padding-right: 20px;}
+
+
+
+.mainPart .container h1.blue{
+    color: #721c24;
+    text-align: center;
+}
+.sBtn h3{font-size: 16px;color: #58627C; font-weight: 400;}
+.sBtn .btnSquare a{font-size: 16px;}
+.space10{margin-top: 2em}
+
+.introcouPhone  .cur a{ color: #fff}
+
+.btnNext button{
+    cursor: pointer;
+}
+.btnNext{
+    text-align: center;
+}
+
+.introcouPhone .form-control,.myCell .form-control{border: 1px solid #CFB87E; color: #CFB87E;box-shadow: 0 1px 3px 0 rgba(191,188,188,0.50); margin: 0.5em 0 0;}
+
+.writeInfo .row .writeInfoText{ margin:0px 0 10px;padding:20px 40px}
+.writeInfoText{ font-size: 14px;color: #9B9B9B}
+
+.writeInfoText .orange{margin-bottom: 10px}
+.writeInfoText span{ color: #58627C }
+.writeInfo .row .writeInfoRight{ margin: 0em 0.2em; padding: 0px;position: relative;z-index:5}
+.exp{padding:30px 0px;border-bottom: 1px solid #EDEDED;}
+.exp li{ display: block;}
+.exp .fl{ width: 15%;border: 1px solid #806961;border-radius: 18px; text-align: center;font-size: 14px;
+    color: #806961; padding: 5px 10px}
+.exp .fr{width: 80%}
+.writeInfoText .clr-blue{cursor: help; color: #689CE5}
+.expLast{border-bottom: none;}
+
+.submit_counter{text-align: right;border-top: 1px solid #EDEDED; color: #ccc; padding: 10px 0}
+.submit_counter span{color: #689CE5;font-size: 12px;}
+.btnNext a{margin-left: 20px;font-size: 12px}
+.writeInfoRightTitle{background-color: #826a60;border-radius: 0.8rem 0.8rem 0 0; padding-left:0px;    margin-bottom: 0px;}
+.writeInfoRightTitle li{font-size: 28px;color: #FFFFFF; text-align: center; margin-left: 0px; font-weight:200; padding:30px 0;}
+.phoneIcon{background: url(../img/phone.png) no-repeat; z-index:59999; display:block; height:60px; width:60px; 
+    position: absolute; top: 25%;left: 42%;}
+
+.sLabel{ padding: 15px 0}
+/* ------------------------------------------------------------------------------------
+lawsuit      */
+.img-lawsuit{
+    background: url(../img/lawsuit.png) no-repeat fixed center center;
+    background-size: cover;
+}
+.lawsuit-content{text-align: center;}
+.lawsuit-content .heading{font-size: 40px;color: #CFB87E;padding: 1em 0 0.5em;font-weight: 200;}
+.lawsuit-content p{font-size: 30px;color: #FFFFFF;padding: 0em 0 0.5em;font-weight: 200;}
+.lawsuit-content a{color: #fff;
+    background-color: #CFB87E;
+    border-color: #CFB87E;
+    border-radius: 5rem;font-size:16px;color: #FFFFFF; padding: 10px 20px;}
+.lawsuit-content a:hover{ text-decoration: none;}
+
+/* ------------------------------------------------------------------------------------
+login      */
+.bgBlack{background:rgba(0,0,0,0.50);;position: absolute;z-index:666; width: 100%;height:500%;overflow: hidden;}
+
+.validate-code{
+    width: calc(100% - 25px)
+}
+#validate-code-refresh{
+    cursor: pointer;
+}
+
+.signupBox h3{ font-weight: 200; ; color: #CFB87E;}
+.signupTitle{text-align: center;display: block; margin: 0.5em 0 1em;}
+.signupBox .control-label{    border: 1px solid #CFB87E;
+    border-radius: 18px;
+    text-align: center;color: #CFB87E; font-size: 12px; padding:8px 10px;}
+.signupBox .control-label:hover{ text-decoration: none;}
+
+ .signupBox .btn_cancel{ margin-right: 40px; background: #ccc; border:1px solid #ccc;}   
+.signupBox .fpw{ font-size: 12px;color: #999}
+.signupBox .fpw a{text-align: right;    display: block;}
+.chooseAds{width: 60%}
+.chooseAds ul li{ float: left; display: block;margin-right:10px; padding: 5px 10px}
+.chooseAds ul li a,.chooseAdsItem ul li label{ color: #999}
+.chooseAds ul .cur{background-color: #CFB87E;
+    border-radius: 5rem; }
+    .chooseAds ul .cur a:hover{ text-decoration: none}
+ .chooseAds ul .cur a{color: #fff}
+.chooseAdsItem h4{ font-size: 14px}
+.chooseAdsItem ul { padding-left: 0px  }
+.chooseAdsItem h4{color: #58627C;}
+.chooseAdsItem{ margin-bottom: 40px}
+
+
+.video{text-align: center; margin: 2em 0}
+.pop_close{background: url(../img/pop_close.png) no-repeat; display: block;;width: 46px; height: 44px; position: absolute;    left: 420px;
+    top: -5px;}
+
+/* ------------------------------------------------------------------------------------
+laywer login      */
+.img-lawywerSign{background: url(../img/laywer_bg.png) no-repeat top center;}
+.img-lawywerSign  .lawsuit-content a{ margin: 10px 30px;}
+
+/* ------------------------------------------------------------------------------------
+
+my          */
+.introcouPhone .mycenterCell{ min-height: auto;}
+.introcouPhone .mycenterCell li img{ margin-bottom: 20px}
+.introcouPhone .mycenterCell li a{color: #58627C}
+.introcouPhone .mycenterCell li a:hover,.mybox a:hover{ text-decoration: none}
+.mybox a:hover{background-color: #689CE5}
+.mybox .card a:hover {
+    background-color: #fff;
+}
+.mybox a .writeInfoText{color: #58627C}
+.writeInfo .row .writeInfoText .gray{ color: #ccc; padding-top: 20px}
+.writeInfo .row .writeInfoText .gray span{ padding-right: 20px}
+.writeInfo .row .myCell{min-height: auto}
+
+/* ------------------------------------------------------------------------------------
+
+laywer center          */
+.writeInfo .row .laywer_right{min-height: auto;margin: 0em 0.2em;padding: 0px;}
+.laywer_right li{ padding: 20px 0; border-bottom: 1px solid #f1f1f1;}
+.laywer_right li.lastItem{ border-bottom: none}
+.laywer_right .cur{ color:#CFB87E}
+.laywer_right li:hover{  background-color: #F0F4FD}
+.laywer_right .cur:hover{  background-color: #fff}
+.laywer_right li a{color: #9B9B9B}
+.laywer_right li a:hover{text-decoration: none;}
+.myCell h4{ display: inline;color: #689CE5}
+.myCell .form-control{border: 1px solid #CFB87E; }
+.mybox .btnSearch button{ width: auto;height: auto; font-size: 14px}
+.myCell .line{border-bottom: 1px solid #ededed; margin: 20px 0}
+.writeInfoText .listTitle{border:1px solid #CFB87E; border-left: none; border-right:none;
+    background: #FFFBF6; text-align: center;color: #C08E61;padding: 5px 20px; margin-bottom: 10px;
+}
+.writeInfoText .listTitle a{color: #C08E61}
+.writeInfoText .listTitle a:hover{ background-color: #fff;}
+.listTitle b,.writeInfoText .listTitle span{ padding: 0 10px;}
+.writeInfoText .listTitle span,.tableBox b{color: #C08E61;}
+.tableBox td,.tableBox th{ border: none; color: #666; font-size: 14px; padding: 0.4em}
+.caseBox ul{ margin-bottom: 15px;}
+.caseBox h4{font-size: 18px;}
+.caseBox ul li,.writeInfo .row .caseBox .gray{ color: #000; padding: 5px 0;}
+.writeInfo .row .caseBox .gray{ color: #999;}
+.tableBox{}
+
+/*404 page*/
+.page-404-error{
+    color: #665b60;
+}
+/*pagination component*/
+.page-link{
+    color: #716160;
+}
+.page-link:focus,
+.page-link:hover {
+    color: #716160;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #ddd;
+}
+
+/*button component*/
+.login-loginBTN{
+    color: #fff;
+    padding:.5rem 3rem;
+}
+.btn-law {
+    color: #fff;
+    background-color: #806961;
+    border-color: #806961;
+}
+.btn-law:hover {
+    color: #fff;
+    background-color: #5b5560;
+    border-color: #5b5560;
+}
+.signupBox button{
+    background-color: #CFB87E;
+    border-color: #CFB87E;
+    border-radius: 5rem;
+    font-size: 16px;
+    color: #FFFFFF;  
+    cursor: pointer;
+}
+/*button component*/
+
+/*modal component*/
+.modal-title {
+    font-size: 1.1rem;
+}
+
+/*input component*/
+.signupBox .form-group input,
+.signupBox .form-group select{
+    border:none;
+    border-bottom: 1px solid #ccc; 
+    border-radius: 0em
+}
+.form-control{
+    font-size: 16px;
+    font-weight: 100;
+}
+.form-group .form-control{
+    border-radius: 4px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.form-control:focus {
+  border-color: #806961;
+  box-shadow: none;
+}
+
+/*footer*/
+footer.indexFooter{
+    background-color: transparent;
+}
+footer{background-color: #14152D; text-align: center; color: #7C93AD; font-size: 12px;padding: 1em 0;}
+footer .list-group li{ line-height:20px;}
+
+/*----兼容性----*/
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainPart{
+        padding-top: 60px;
+    }
+    .introcouPhone ul.col-md-6,
+    .introcouPhone ul.col-md-4,
+    .writeInfo div.col-md-10,
+    .step2Step ul.ui-choose li.col-md-5{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .writeInfo div.col-md-2{
+        display: none;
+    }
+    .feed .box1 {
+        width: 500px;
+    }
+    .logoLine img{
+        width: 70%;
+    }
+    .step2Step div.col-md-12{
+        margin-right: -15px;
+        width: 100%;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .col-md-4 .logoLine img{
+        width: 40%
+    }
+    .mapId{
+        float: right;
+        margin-top: 10px;
+    }
+    .mainPart {
+        padding-top: 120px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+    .mainPart .container .containerWapper h1 {
+        margin-top: 10%;
+    }
+    .step2Step .form-group{
+        width: 87%;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    .step2Step .sLabel{
+        width: 5%;
+        padding: 6px 0;
+    }
+    .introcouPhone .form-control{
+        margin-top: 0;
+    }
+    .mycasePart{
+        padding-top: 50px;
+    }
+    .topBar .col-md-3{
+        width: 40%;
+        padding: 8px 0 5px;
+    }
+    .topBar .col-md-3 img{
+        width: 100%;
+    }
+    .topBar .col-md-9{
+        width: 60%;
+    }
+    .mainNav{
+        padding-bottom: 13px;
+    }
+    .space20{
+        margin: 20px 0;
+        padding: 0;
+    }
+    .col-md-9 ul.mainNav li:first-child{
+        margin-top: 10px;
+    }
+    .step2Step{
+        margin-top: 30px;
+    }
+    .caseBox ul{
+        padding-left: 5px;
+    }
+    .writeInfoText .listTitle td span{
+        display: block;
+        margin: 3px 0;
+    }
+    .writeInfoText .listTitle td:nth-child(2){
+        display: none;
+    }
+    .tableBox td{
+        display: block;
+    }
+    .btnNext button{
+        display: block;
+        float: left;
+    }
+    .lawyer2button{
+        margin: 0;
+        padding: 0;
+    }
+    footer .list-group{
+        padding: 0 30px;
+    }
+    .empty {
+        margin: 10em 0 0;
+    }
+    .lawsuit-content h3.heading{
+        padding: 0 0 20px;
+    }
+    .lawsuit-content {
+        padding-bottom: 7em;
+    }
+    .feed .box1 {
+        width: 260px;
+    }
+    .btnNext button.haveA {
+        margin-left: 20%;
+    }
+    .mainNav a {
+        padding: .5rem .25rem;
+    }
+    .signupBox {
+        width: 100%;
+        margin: 0px;
+        max-height: 70%;
+        overflow-y: auto;
+    }
+    .step2Step {
+        margin: 20px 15px 90px;
+    }
+    .containerWapper {
+        padding: 80px 0 95px;
+    }
+    .containerWapper div{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .answer-quiz {
+        min-width: inherit;
+    }
+    .img-lawywerSign .lawsuit-content a {
+        margin: 10px 0px;
+    }
+    .headerRight{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer{
+        padding: 5px 0;
+        font-size: 10px;
+    }
+    footer .list-group li {
+        line-height: 15px;
+    }
+    .signupTitle {
+        margin: 0.3em 0 0.3em;
+    }
+    .signupBox .form-group {
+        margin-bottom: .1rem;
+    }
+    .page-link{
+        padding: .25rem .25rem;
+    }
+    .page-item.active .page-link {
+        background-color: #716160;
+        border-color: #716160;
+    }
+    .writeInfo.space20>.row>div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .writeInfo .row .writeInfoText {
+        padding: 20px 15px;
+    }
+}
+.alert-warning.info {
+    color: #f60;
+    font-size: 14px;
+    padding-left: 50px;
+    position: relative;
+    background: #fdf3c6;
+    border: 0;
+    margin-bottom: 0;
+}
+.alert-warning.info .icon-msg {
+    position: absolute;
+    left: 18px;
+    top: 17px;
+}
+.alert-warning.info p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.steps.laywer-info{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cm-step {
+    position: relative;
+    width: 100%
+}
+.cm-step ul.cm-step-list {
+    position: relative;
+    height: 70px;
+    margin: 20px 0 10px 0;
+    list-style: none;
+    padding-left: 0;
+}
+.cm-step ul.cm-step-list:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    background: #ccc;
+}
+.cm-step ul.cm-step-list li {
+    float: left;
+    position: relative;
+    width: 25%;
+}
+.cm-step ul.cm-step-list li .tit {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    color: #999;
+    display: block;
+}
+.cm-step ul.cm-step-list li.complete .tit {
+    color: #806960;
+}
+.cm-step ul.cm-step-list li.current .tit {
+    color: #806960;
+}
+.cm-step ul.cm-step-list li.complete.first-list:before {
+    border-radius: 10px 0 0 10px;
+}
+.cm-step ul.cm-step-list li.current:before {
+    border-radius: 0 10px 10px 0;
+    background: #806960;
+}
+.cm-step ul.cm-step-list li.current:after {
+    background: #806960;
+}
+.cm-step ul.cm-step-list li.current.first-list:before {
+    border-radius: 10px;
+}
+.cm-step ul.cm-step-list li.complete:before {
+    background: #806960;
+    border-radius: 0;
+}
+.cm-step ul.cm-step-list li:after {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    margin-left: -10px;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    background: #ccc;
+    display: block;
+}
+.cm-step ul.cm-step-list li.complete:after {
+    background: #806960;
+}
+.cm-step ul.cm-step-list li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    background: #ccc;
+    display: block;
+}
